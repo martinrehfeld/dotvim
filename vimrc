@@ -4,6 +4,7 @@ set nocompatible                  " Must come first because it changes other opt
 
 set history=1000
 let mapleader = ","
+set shortmess=atI
 map <Leader>m <Plug>MakeGreen
 let g:rubytest_in_quickfix = 1
 let g:LustyJugglerSuppressRubyWarning = 1
