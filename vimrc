@@ -110,7 +110,8 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-" autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
