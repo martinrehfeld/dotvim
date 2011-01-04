@@ -92,6 +92,9 @@ map Q <Esc>
 
 imap <C-l> <space>=><space>
 
+" unhighlight on <C-l>
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
