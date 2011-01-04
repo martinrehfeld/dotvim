@@ -9,8 +9,10 @@ set guioptions-=L
 set guioptions-=r
 set background=light              " Background.
 set lines=70 columns=150          " Window dimensions.
-set relativenumber
 set foldcolumn=5
+
+set relativenumber
+autocmd BufEnter * set relativenumber
 
 set fuoptions=maxvert,maxhorz
 map <leader>f :set invfullscreen<CR>
