@@ -3,6 +3,7 @@
 set nocompatible                  " Must come first because it changes other options.
 
 set history=1000
+let mapleader = ","
 map <Leader>m <Plug>MakeGreen
 let g:rubytest_in_quickfix = 1
 let g:LustyJugglerSuppressRubyWarning = 1
