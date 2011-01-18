@@ -106,8 +106,12 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 "vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby set foldmethod=syntax
+autocmd FileType ruby set foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" folding customization
+autocmd BufRead * normal zR
+nnoremap <space> za
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
