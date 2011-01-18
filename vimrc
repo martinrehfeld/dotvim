@@ -86,7 +86,11 @@ map <leader>T :CommandT<cr>
 map <Leader>r <Plug>RubyTestRun " change from <Leader>t to <Leader>\
 map <Leader>R <Plug>RubyFileRun " change from <Leader>T to <Leader>]
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-"
+
+" Map next/prev buffer to <C-Tab> / <C-S-Tab>
+map <C-Tab> :bnext<cr>
+map <C-S-Tab> :bprevious<cr>
+
 " Get rid of awkward Ex-mode
 map Q <Esc>
 
