@@ -10,6 +10,7 @@ set guioptions-=r
 set background=light              " Background.
 set lines=72 columns=180          " Window dimensions.
 set foldcolumn=5
+set list
 
 set relativenumber
 autocmd BufEnter * set relativenumber
@@ -21,6 +22,7 @@ let g:rubytest_cmd_feature = "cucumber --no-color %p"
 let g:rubytest_cmd_story = "cucumber --no-color %p -n '%c'"
 
 colorscheme railscasts
+hi NonText term=bold ctermfg=9 gui=NONE guifg=#555555
 
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
