@@ -117,6 +117,18 @@ autocmd FileType ruby set foldmethod=syntax
 autocmd BufRead * normal zR
 nnoremap <space> za
 
+" remove trailing whitespace on save
+function TrimSpaces()
+  if !&binary && &filetype != 'diff'
+    %s/\(^--\)\@<!\s*$//ge
+    ''
+  end
+endfunction
+autocmd FileWritePre * :silent! call TrimSpaces()
+autocmd FileAppendPre * :silent! call TrimSpaces()
+autocmd FilterWritePre * :silent! call TrimSpaces()
+autocmd BufWritePre * :silent! call TrimSpaces()
+
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
