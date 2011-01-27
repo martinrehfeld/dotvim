@@ -110,7 +110,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 "vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby set foldmethod=syntax
+autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " folding customization
