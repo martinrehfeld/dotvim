@@ -49,3 +49,6 @@
 [submodule "bundle/godlygeek-tabular"]
 	path = bundle/godlygeek-tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "bundle/scrooloose-syntastic"]
+	path = bundle/scrooloose-syntastic
+	url = git://github.com/scrooloose/syntastic.git
