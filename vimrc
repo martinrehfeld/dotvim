@@ -95,6 +95,8 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <C-Tab> :bnext<cr>
 map <C-S-Tab> :bprevious<cr>
 
+map <leader>b :FufBuffer<cr>
+
 " Get rid of awkward Ex-mode
 map Q <Esc>
 
