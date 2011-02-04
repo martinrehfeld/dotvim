@@ -148,4 +148,7 @@ autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au FileType markdown,textile setlocal spell spelllang=en_us
 
+au InsertEnter * hi StatusLine ctermbg=16 ctermfg=1
+au InsertLeave * hi StatusLine ctermbg=16 ctermfg=8
+
 let g:rubycomplete_rails = 1
