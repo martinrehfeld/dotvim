@@ -1,6 +1,3 @@
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
-
-set nocompatible                  " Must come first because it changes other options.
 
 set history=1000
 let mapleader = ","
@@ -147,5 +144,6 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+au FileType markdown,textile setlocal spell spelllang=en_us
 
 let g:rubycomplete_rails = 1
