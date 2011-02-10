@@ -28,6 +28,9 @@ set showmode                      " Display the mode you're in.
 set backspace=indent,eol,start    " Intuitive backspacing.
 
 set hidden                        " Handle multiple buffers better.
+"
+" Map code completion to , + tab
+imap <leader><tab> <C-x><C-o>
 
 set wildmenu                      " Enhanced command line completion.
 set wildmode=list:longest         " Complete files like a shell.
@@ -44,10 +47,11 @@ set hlsearch                      " Highlight matches.
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 set linebreak
-set formatoptions=tq
+set formatoptions=qn1
 set wrapmargin=4
-set textwidth=120
+set textwidth=79
 
+set splitbelow                    " Split windows below the current window.
 set title                         " Set the terminal's title
 
 set visualbell                    " No beeping.
