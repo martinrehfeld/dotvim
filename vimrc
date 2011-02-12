@@ -8,6 +8,7 @@ let g:rubytest_in_quickfix = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 let g:erlangHighlightBif = 1
 let delimitMate_balance_matchpairs = 1
+let g:syntastic_auto_loc_list=1
 
 silent! call pathogen#runtime_append_all_bundles()
 
