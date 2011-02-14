@@ -9,6 +9,7 @@ let g:LustyJugglerSuppressRubyWarning = 1
 let g:erlangHighlightBif = 1
 let delimitMate_balance_matchpairs = 1
 let g:syntastic_auto_loc_list=1
+let g:syntastic_disabled_filetypes = ['sass']
 
 silent! call pathogen#runtime_append_all_bundles()
 
