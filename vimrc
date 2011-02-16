@@ -51,6 +51,7 @@ set linebreak
 set formatoptions=qn1
 set wrapmargin=4
 set textwidth=79
+set cursorline
 
 set splitbelow                    " Split windows below the current window.
 set title                         " Set the terminal's title
@@ -151,7 +152,7 @@ autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au FileType markdown,textile setlocal spell spelllang=en_us
 
-au InsertEnter * hi StatusLine ctermbg=16 ctermfg=1
-au InsertLeave * hi StatusLine ctermbg=16 ctermfg=8
+au InsertEnter * hi StatusLine ctermbg=white ctermfg=darkred
+au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
 
 let g:rubycomplete_rails = 1
