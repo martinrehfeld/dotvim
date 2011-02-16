@@ -22,9 +22,6 @@
 [submodule "bundle/msanders-cocoa"]
 	path = bundle/msanders-cocoa
 	url = http://github.com/msanders/cocoa.vim.git
-[submodule "bundle/astashov-vim-ruby-debugger"]
-	path = bundle/astashov-vim-ruby-debugger
-	url = git://github.com/astashov/vim-ruby-debugger.git
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
