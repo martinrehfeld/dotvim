@@ -157,4 +157,7 @@ au FileType markdown,textile setlocal spell spelllang=en_us
 au InsertEnter * hi StatusLine ctermbg=white ctermfg=darkred
 au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
 
+" automatically clean up closed fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
 let g:rubycomplete_rails = 1
