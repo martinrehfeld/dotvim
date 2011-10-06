@@ -7,6 +7,8 @@ map <Leader>m <Plug>MakeGreen
 let g:rubytest_in_quickfix = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 let g:erlangHighlightBif = 1
+let g:erlangFold = 1
+let g:erlangFoldSplitFunction = 0
 let delimitMate_balance_matchpairs = 1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['sass']
