@@ -9,6 +9,7 @@ let g:LustyJugglerSuppressRubyWarning = 1
 let g:erlangHighlightBif = 1
 let g:erlangFold = 1
 let g:erlangFoldSplitFunction = 0
+let g:erlangManPath = '/usr/local/erlang/man'
 let delimitMate_balance_matchpairs = 1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['sass']
