@@ -1,4 +1,3 @@
-
 set history=1000
 let mapleader = ","
 set shortmess=atI
@@ -80,7 +79,8 @@ set wildignore+=vendor,log,tmp,*.swp
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}\ %{SyntasticStatuslineFlag()}%=%-16(\ %l,%c-%v\ %)%P
 
 " Color mappings.
-colorscheme github
+set background=light
+colorscheme solarized
 highlight SpellBad term=reverse ctermfg=White ctermbg=Red gui=undercurl guisp=Red
 
 " Tab mappings.

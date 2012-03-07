@@ -1,7 +1,7 @@
 " Example Vim graphical configuration.
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
-set guifont=Menlo:h14             " Font family and font size.
+set guifont=Inconsolata:h16       " Font family and font size.
 set antialias                     " MacVim: smooth fonts.
 set encoding=utf-8                " Use UTF-8 everywhere.
 set guioptions-=T                 " Hide toolbar.
@@ -21,11 +21,11 @@ map <leader>f :set invfullscreen<CR>
 let g:rubytest_cmd_feature = "cucumber --no-color %p"
 let g:rubytest_cmd_story = "cucumber --no-color %p -n '%c'"
 
-colorscheme railscasts
+set background=light
+colorscheme solarized
 hi NonText term=bold ctermfg=9 gui=NONE guifg=#555555
 
 set cuc cul
-hi CursorColumn term=underline cterm=underline guibg=#303030
 hi! link CursorLine CursorColumn
 
 if has("gui_macvim")
