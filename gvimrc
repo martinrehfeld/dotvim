@@ -24,6 +24,10 @@ let g:rubytest_cmd_story = "cucumber --no-color %p -n '%c'"
 colorscheme railscasts
 hi NonText term=bold ctermfg=9 gui=NONE guifg=#555555
 
+set cuc cul
+hi CursorColumn term=underline cterm=underline guibg=#303030
+hi! link CursorLine CursorColumn
+
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <D-t> <Plug>PeepOpen
