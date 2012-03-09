@@ -1,16 +1,20 @@
 set history=1000
 let mapleader = ","
 set shortmess=atI
-set listchars=nbsp:•,eol:¬,tab:→ ,extends:»,precedes:«,trail:◦
-map <Leader>m <Plug>MakeGreen
+set listchars=nbsp:•,eol:¬,tab:→ ,extends:»,precedes:«,trail:▫
+map <Leader>m <Plug>MakeGreen     " free <Leader>t
+let g:solarized_visibility = 'normal'
 let g:rubytest_in_quickfix = 1
+let g:rubytest_cmd_feature = "cucumber --no-color %p"
+let g:rubytest_cmd_story = "cucumber --no-color %p -n '%c'"
+let g:rubycomplete_rails = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 let g:erlangHighlightBif = 1
 let g:erlangFold = 1
 let g:erlangFoldSplitFunction = 0
 let g:erlangManPath = '/usr/local/erlang/man'
 let delimitMate_balance_matchpairs = 1
-let g:syntastic_auto_loc_list=1
+let g:syntastic_auto_loc_list=0
 let g:syntastic_disabled_filetypes = ['sass']
 let g:PreviewBrowsers='open'
 
@@ -31,7 +35,7 @@ set showmode                      " Display the mode you're in.
 set backspace=indent,eol,start    " Intuitive backspacing.
 
 set hidden                        " Handle multiple buffers better.
-"
+
 " Map code completion to , + tab
 imap <leader><tab> <C-x><C-o>
 
@@ -41,8 +45,12 @@ set wildmode=list:longest         " Complete files like a shell.
 set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
 
-set number                        " Show line numbers.
+set relativenumber                " Show relative line numbers.
+autocmd BufEnter * set relativenumber
+
 set ruler                         " Show cursor position.
+set cuc cul                       " ... including the column
+hi! link CursorLine CursorColumn
 
 set incsearch                     " Highlight matches as you type.
 set hlsearch                      " Highlight matches.
@@ -63,18 +71,20 @@ set visualbell                    " No beeping.
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
 
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
+set tabstop=2                     " Global tab width.
+set shiftwidth=2                  " And again, related.
+set expandtab                     " Use spaces instead of tabs
 set smarttab
 
 set laststatus=2                  " Show the status line all the time
 set autoindent
 set smartindent
 
-set shell=/bin/bash               " Some commands seem to have problems with zsh"
+set clipboard=unnamed             " use system clipboard by default
 
-set wildignore+=vendor,log,tmp,*.swp
+set shell=/bin/bash               " Some commands seem to have problems with zsh
+
+set wildignore+=vendor,log,rel,tmp,*.swp,*.swo,*.beam,*.png,*.jpeg,*.jpg,*.gif,*.o,*.elc,*.rbc,*.pyc,*.pds,*.ai,*.pdf,*.mov,*.aep,*.dmg,*.zip,*.gz,*.tar
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}\ %{SyntasticStatuslineFlag()}%=%-16(\ %l,%c-%v\ %)%P
 
@@ -84,25 +94,26 @@ colorscheme solarized
 highlight SpellBad term=reverse ctermfg=White ctermbg=Red gui=undercurl guisp=Red
 
 " Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
-map <leader>t :CommandT<cr>
+map <Leader>tt :tabnew<cr>
+map <Leader>te :tabedit
+map <Leader>tc :tabclose<cr>
+map <Leader>to :tabonly<cr>
+map <Leader>tn :tabnext<cr>
+map <Leader>tp :tabprevious<cr>
+map <Leader>tf :tabfirst<cr>
+map <Leader>tl :tablast<cr>
+map <Leader>tm :tabmove
+map <Leader>t :CommandT<cr>       " (this takes a while as the tab mappings need to timeout first)
+map <C-p> :CommandT<cr>           " therefore provide a quick access to command-t
 map <Leader>r <Plug>RubyTestRun " change from <Leader>t to <Leader>\
 map <Leader>R <Plug>RubyFileRun " change from <Leader>T to <Leader>]
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 " Map next/prev buffer to <C-Tab> / <C-S-Tab>
 map <C-Tab> :bnext<cr>
 map <C-S-Tab> :bprevious<cr>
 
-map <leader>b :FufBuffer<cr>
+map <Leader>b :FufBuffer<cr>
 
 " Get rid of awkward Ex-mode
 map Q <Esc>
@@ -161,5 +172,3 @@ au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
 
 " automatically clean up closed fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
-
-let g:rubycomplete_rails = 1
