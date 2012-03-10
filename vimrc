@@ -103,8 +103,11 @@ map <Leader>tp :tabprevious<cr>
 map <Leader>tf :tabfirst<cr>
 map <Leader>tl :tablast<cr>
 map <Leader>tm :tabmove
-map <Leader>t :CommandT<cr>       " (this takes a while as the tab mappings need to timeout first)
-map <C-p> :CommandT<cr>           " therefore provide a quick access to command-t
+" (this takes a while as the tab mappings need to timeout first)
+map <Leader>t :CommandT<cr>
+" therefore provide a quick access to command-t
+map <C-p> :CommandT<cr>
+
 map <Leader>r <Plug>RubyTestRun " change from <Leader>t to <Leader>\
 map <Leader>R <Plug>RubyFileRun " change from <Leader>T to <Leader>]
 map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
