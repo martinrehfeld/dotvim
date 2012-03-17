@@ -49,7 +49,7 @@ set smartcase                     " But case-sensitive if expression contains a 
 set relativenumber                " Show relative line numbers.
 autocmd BufEnter * set relativenumber
 
-set foldcolumn=5
+set foldcolumn=3
 
 set ruler                         " Show cursor position.
 set cuc cul                       " ... including the column
