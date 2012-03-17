@@ -16,6 +16,7 @@ let g:erlangFoldSplitFunction = 0
 let g:erlangManPath = '/usr/local/erlang/man'
 let delimitMate_balance_matchpairs = 1
 let g:syntastic_auto_loc_list=0
+let g:syntastic_enable_signs=1
 let g:syntastic_disabled_filetypes = ['sass']
 let g:PreviewBrowsers='open'
 
