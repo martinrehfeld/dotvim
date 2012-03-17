@@ -9,8 +9,6 @@ set guioptions-=L
 set guioptions-=r
 set background=light              " Background.
 set lines=62 columns=204          " Window dimensions.
-set foldcolumn=5
-set list
 
 set fuoptions=maxvert,maxhorz
 map <leader>f :set invfullscreen<CR>

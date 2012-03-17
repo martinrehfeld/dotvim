@@ -2,6 +2,7 @@ set history=1000
 let mapleader = ","
 set shortmess=atI
 set listchars=nbsp:•,eol:¬,tab:→ ,extends:»,precedes:«,trail:▫
+set list
 map <Leader>m <Plug>MakeGreen     " free <Leader>t
 let g:solarized_visibility = 'normal'
 let g:rubytest_in_quickfix = 1
@@ -47,6 +48,8 @@ set smartcase                     " But case-sensitive if expression contains a 
 
 set relativenumber                " Show relative line numbers.
 autocmd BufEnter * set relativenumber
+
+set foldcolumn=5
 
 set ruler                         " Show cursor position.
 set cuc cul                       " ... including the column
