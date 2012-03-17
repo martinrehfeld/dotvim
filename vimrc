@@ -178,3 +178,12 @@ au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
 
 " automatically clean up closed fugitive buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+function! DiffOrig()
+  if &diff
+    wincmd p | bdel | diffoff
+  else
+    vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+  endif
+endfunction
+map <leader>e :call DiffOrig()<cr>
