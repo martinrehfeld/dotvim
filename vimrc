@@ -145,11 +145,6 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 "vnoremap ; :
 "vnoremap : ;
 
-" Automatic fold settings for specific files. Uncomment to use.
-autocmd FileType ruby   setlocal foldmethod=syntax
-autocmd FileType erlang setlocal shiftwidth=4 tabstop=4
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-
 " folding customization
 autocmd BufRead * normal zR
 nnoremap <space> za
@@ -177,7 +172,6 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
-au FileType markdown,textile setlocal spell spelllang=en_us
 
 au InsertEnter * hi StatusLine ctermbg=white ctermfg=darkred
 au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
