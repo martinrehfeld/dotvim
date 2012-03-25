@@ -117,7 +117,7 @@ map <C-p> :CommandT<cr>
 
 map <Leader>r <Plug>RubyTestRun " change from <Leader>t to <Leader>\
 map <Leader>R <Plug>RubyFileRun " change from <Leader>T to <Leader>]
-map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <Leader>d :execute 'NERDTreeMirrorToggle'<CR>
 
 " Map next/prev buffer to <C-Tab> / <C-S-Tab>
 map <C-Tab> :bnext<cr>
