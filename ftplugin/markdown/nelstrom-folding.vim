@@ -31,7 +31,7 @@ function! MarkdownFoldText()
 endfunction
 
 setlocal foldmethod=expr
-setlocal foldexpr=FlatMarkdownFolds()
+setlocal foldexpr=NestedMarkdownFolds()
 setlocal foldtext=MarkdownFoldText()
 
 function! ToggleMarkdownFoldexpr()
