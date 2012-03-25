@@ -99,7 +99,10 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 " Color mappings.
 set background=light
 colorscheme solarized
-highlight SpellBad term=reverse ctermfg=White ctermbg=Red gui=undercurl guisp=Red
+
+" Spell checker
+highlight SpellBad ctermfg=9 gui=undercurl guisp=Red
+set spellsuggest=8
 
 " Tab mappings.
 map <Leader>tt :tabnew<cr>
@@ -120,12 +123,11 @@ map <Leader>r <Plug>RubyTestRun
 map <Leader>R <Plug>RubyFileRun
 map <Leader>d :execute 'NERDTreeMirrorToggle'<CR>
 map <Leader>u :execute 'GundoToggle'<CR>
+map <Leader>b :FufBuffer<cr>
 
 " Map next/prev buffer to <C-Tab> / <C-S-Tab>
 map <C-Tab> :bnext<cr>
 map <C-S-Tab> :bprevious<cr>
-
-map <Leader>b :FufBuffer<cr>
 
 " Get rid of awkward Ex-mode
 map Q <Esc>
