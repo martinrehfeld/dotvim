@@ -55,3 +55,6 @@
 [submodule "bundle/VOom"]
 	path = bundle/VOom
 	url = https://github.com/vim-scripts/VOoM.git
+[submodule "bundle/scrooloose-nerdtree"]
+	path = bundle/scrooloose-nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
