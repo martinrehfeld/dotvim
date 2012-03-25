@@ -22,6 +22,7 @@ let g:syntastic_auto_loc_list=0
 let g:syntastic_enable_signs=1
 let g:syntastic_disabled_filetypes = ['sass']
 let g:PreviewBrowsers='open'
+let g:gundo_close_on_revert = 1
 
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -115,9 +116,10 @@ map <Leader>t :CommandT<cr>
 " therefore provide a quick access to command-t
 map <C-p> :CommandT<cr>
 
-map <Leader>r <Plug>RubyTestRun " change from <Leader>t to <Leader>\
-map <Leader>R <Plug>RubyFileRun " change from <Leader>T to <Leader>]
+map <Leader>r <Plug>RubyTestRun
+map <Leader>R <Plug>RubyFileRun
 map <Leader>d :execute 'NERDTreeMirrorToggle'<CR>
+map <Leader>u :execute 'GundoToggle'<CR>
 
 " Map next/prev buffer to <C-Tab> / <C-S-Tab>
 map <C-Tab> :bnext<cr>
