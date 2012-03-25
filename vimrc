@@ -92,7 +92,7 @@ set clipboard=unnamed             " use system clipboard by default
 
 set shell=/bin/bash               " Some commands seem to have problems with zsh
 
-set wildignore+=vendor,log,rel,tmp,*.swp,*.swo,*.beam,*.png,*.jpeg,*.jpg,*.gif,*.o,*.elc,*.rbc,*.pyc,*.pds,*.ai,*.pdf,*.mov,*.aep,*.dmg,*.zip,*.gz,*.tar
+set wildignore+=vendor,output,log,rel,tmp,*.swp,*.swo,*.beam,*.png,*.jpeg,*.jpg,*.gif,*.o,*.elc,*.rbc,*.pyc,*.pds,*.ai,*.pdf,*.mov,*.aep,*.dmg,*.zip,*.gz,*.tar
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}\ %{SyntasticStatuslineFlag()}%=%-16(\ %l,%c-%v\ %)%P
 
