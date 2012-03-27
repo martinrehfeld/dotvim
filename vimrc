@@ -23,6 +23,7 @@ let g:syntastic_enable_signs=1
 let g:syntastic_disabled_filetypes = ['sass']
 let g:PreviewBrowsers='open'
 let g:gundo_close_on_revert = 1
+let g:Gitv_TruncateCommitSubjects = 1
 
 silent! call pathogen#runtime_append_all_bundles()
 
@@ -104,6 +105,9 @@ colorscheme solarized
 highlight SpellBad ctermfg=9 gui=undercurl guisp=Red
 set spellsuggest=8
 
+" abbreviations
+cabbrev git Git
+
 " Tab mappings.
 map <Leader>tt :tabnew<cr>
 map <Leader>te :tabedit
@@ -131,6 +135,11 @@ map <C-S-Tab> :bprevious<cr>
 
 " Get rid of awkward Ex-mode
 map Q <Esc>
+
+nmap <leader>gv :Gitv --all<cr>
+nmap <leader>gV :Gitv! --all<cr>
+vmap <leader>gV :Gitv! --all<cr>
+nmap <leader>gs :Gstatus<cr>
 
 imap <C-l> <space>=><space>
 
