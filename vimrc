@@ -147,16 +147,6 @@ imap <C-l> <space>=><space>
 " unhighlight on <C-l>
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
-
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
-
-"vnoremap ; :
-"vnoremap : ;
-
 " folding customization
 autocmd BufRead * normal zR
 nnoremap <space> za
