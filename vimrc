@@ -149,6 +149,9 @@ imap <C-l> <space>=><space>
 " unhighlight on <C-l>
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
+" dot command in VISUL (applies to every selected line)
+:vnoremap . :norm.<cr>
+
 " folding customization
 autocmd BufRead * normal zR
 nnoremap <space> za
