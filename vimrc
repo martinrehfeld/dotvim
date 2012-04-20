@@ -55,6 +55,8 @@ set smartcase                     " But case-sensitive if expression contains a 
 set relativenumber                " Show relative line numbers.
 autocmd BufEnter * set relativenumber
 
+set autoread                      " automatically re-read changed files
+
 set foldcolumn=3
 
 set ruler                         " Show cursor position.
