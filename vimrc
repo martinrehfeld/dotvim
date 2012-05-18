@@ -9,7 +9,7 @@ let g:rubytest_in_quickfix = 1
 let g:rubytest_cmd_feature = "cucumber --no-color %p"
 let g:rubytest_cmd_story = "cucumber --no-color %p -n '%c'"
 let g:rubycomplete_rails = 1
-let g:NERDTreeShowLineNumbers = 1
+let g:NERDTreeShowLineNumbers = 0
 let g:NERDTreeStatusline = "NERDTree"
 let g:NERDTreeWinSize = 35
 let g:LustyJugglerSuppressRubyWarning = 1
@@ -52,12 +52,10 @@ set wildmode=list:longest         " Complete files like a shell.
 set ignorecase                    " Case-insensitive searching.
 set smartcase                     " But case-sensitive if expression contains a capital letter.
 
-set relativenumber                " Show relative line numbers.
-autocmd BufEnter * set relativenumber
-
 set autoread                      " automatically re-read changed files
 
-set foldcolumn=3
+set nonumber
+set foldcolumn=4
 
 set ruler                         " Show cursor position.
 set cuc cul                       " ... including the column
@@ -149,7 +147,7 @@ imap <C-l> <space>=><space>
 " unhighlight on <C-l>
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
-" dot command in VISUL (applies to every selected line)
+" dot command in VISUAL (applies to every selected line)
 :vnoremap . :norm.<cr>
 
 " folding customization
