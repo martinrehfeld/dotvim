@@ -80,6 +80,7 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
+set noswapfile                    " no swap files
 
 set tabstop=2                     " Global tab width.
 set shiftwidth=2                  " And again, related.
