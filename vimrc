@@ -25,6 +25,15 @@ let g:PreviewBrowsers='open'
 let g:gundo_close_on_revert = 1
 let g:Gitv_TruncateCommitSubjects = 1
 
+" ctags
+let Tlist_Use_Right_Window=1
+let Tlist_Enable_Fold_Column=0
+let Tlist_Show_One_File=1
+let Tlist_Compact_Format=1
+set updatetime=1000
+set tags=tags; " The ';' at the end will cause the ctags plugin to search for current dir and above dirs until it find a tag file.
+nmap ,c :!(cd %:p:h;ctags *)& " Maps the updates of tags to <leader>c
+
 silent! call pathogen#runtime_append_all_bundles()
 
 call pathogen#helptags()
