@@ -118,6 +118,7 @@ set spellsuggest=8
 
 " abbreviations
 cabbrev git Git
+cabbrev ack Ack
 
 " Tab mappings.
 map <Leader>tt :tabnew<cr>
