@@ -70,3 +70,9 @@
 [submodule "bundle/kana-vim-textobj-lastpat"]
 	path = bundle/kana-vim-textobj-lastpat
 	url = https://github.com/kana/vim-textobj-lastpat.git
+[submodule "bundle/vim-haskell"]
+	path = bundle/vim-haskell
+	url = git://github.com/wlangstroth/vim-haskell.git
+[submodule "bundle/vim-haskellFold"]
+	path = bundle/vim-haskellFold
+	url = git://github.com/Twinside/vim-haskellFold.git

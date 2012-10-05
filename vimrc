@@ -24,6 +24,8 @@ let g:syntastic_disabled_filetypes = ['sass']
 let g:PreviewBrowsers='open'
 let g:gundo_close_on_revert = 1
 let g:Gitv_TruncateCommitSubjects = 1
+let g:haskell_indent_if = 3
+let g:haskell_indent_case = 5
 
 " ctags
 let Tlist_Use_Right_Window=1
