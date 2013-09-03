@@ -82,3 +82,6 @@
 [submodule "bundle/otavialabs-elm.vim"]
 	path = bundle/otavialabs-elm.vim
 	url = https://github.com/otavialabs/elm.vim.git
+[submodule "bundle/vim-hdevtools"]
+	path = bundle/vim-hdevtools
+	url = https://github.com/bitc/vim-hdevtools.git

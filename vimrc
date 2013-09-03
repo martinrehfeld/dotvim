@@ -192,6 +192,10 @@ autocmd BufNewFile,BufRead *_spec.rb set ft=rspec
 
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
+" Haskell dev tools
+au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+
 au InsertEnter * hi StatusLine ctermbg=white ctermfg=darkred
 au InsertLeave * hi StatusLine ctermbg=white ctermfg=black
 
