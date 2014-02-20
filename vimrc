@@ -21,6 +21,7 @@ let g:delimitMate_balance_matchpairs = 1
 let g:syntastic_auto_loc_list=0
 let g:syntastic_enable_signs=1
 let g:syntastic_disabled_filetypes = ['sass']
+let g:syntastic_erlc_include_path = '-rebar rebar.config'
 let g:PreviewBrowsers='open'
 let g:gundo_close_on_revert = 1
 let g:Gitv_TruncateCommitSubjects = 1
