@@ -27,6 +27,10 @@ let g:gundo_close_on_revert = 1
 let g:Gitv_TruncateCommitSubjects = 1
 let g:haskell_indent_if = 3
 let g:haskell_indent_case = 5
+let g:ctrlp_map = '<C-p>'
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_max_files=0
 
 " ctags
 let Tlist_Use_Right_Window=1
@@ -133,10 +137,6 @@ map <Leader>tp :tabprevious<cr>
 map <Leader>tf :tabfirst<cr>
 map <Leader>tl :tablast<cr>
 map <Leader>tm :tabmove
-" (this takes a while as the tab mappings need to timeout first)
-map <Leader>t :CommandT<cr>
-" therefore provide a quick access to command-t
-map <C-p> :CommandT<cr>
 
 map <Leader>r <Plug>RubyTestRun
 map <Leader>R <Plug>RubyFileRun

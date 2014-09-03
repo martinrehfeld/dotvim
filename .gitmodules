@@ -22,9 +22,6 @@
 [submodule "bundle/msanders-cocoa"]
 	path = bundle/msanders-cocoa
 	url = http://github.com/msanders/cocoa.vim.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
 	url = git://github.com/kana/vim-textobj-user.git
@@ -79,3 +76,6 @@
 [submodule "bundle/vim-tbone"]
 	path = bundle/vim-tbone
 	url = git://github.com/tpope/vim-tbone.git
+[submodule "bundle/kien-ctrlp"]
+	path = bundle/kien-ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
