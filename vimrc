@@ -31,6 +31,7 @@ let g:ctrlp_map = '<C-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_max_files=0
+let g:rg_highlight=1
 
 " ctags
 let Tlist_Use_Right_Window=1
@@ -126,6 +127,7 @@ set spellsuggest=8
 " abbreviations
 cabbrev git Git
 cabbrev ack Ack
+cabbrev rg Rg
 
 " Tab mappings.
 map <Leader>tt :tabnew<cr>

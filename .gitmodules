@@ -88,3 +88,6 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vim-ripgrep"]
+	path = bundle/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
