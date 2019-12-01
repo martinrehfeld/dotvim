@@ -1,3 +1,5 @@
+set encoding=utf-8
+scriptencoding utf-8
 set history=1000
 let mapleader = ","
 set shortmess=atI
